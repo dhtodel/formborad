@@ -272,8 +272,7 @@ footer .hand{font-family:var(--hand);font-size:24px;line-height:1.1;color:var(--
     $('donePct').textContent=done+'%';
     $('quote').textContent='신의 한마디: "'+pick(r,done>=75?QUOTE.hi:done>=50?QUOTE.mid:QUOTE.lo)+'"';
     // a quiet postscript from the god, pointing at one career-center program
-    var hint=RX[topFun.n];
-    $('ps').textContent=hint?'P.S. 「'+topFun.n+'」 덜어 내는 법은 취업지원처 '+hint[0]+'에 맡겨 두었단다.':'P.S. 덜 넣은 재료는 취업지원처에 맡겨 두었단다.';
+    $('ps').textContent='P.S. 「'+topFun.n+'」 덜어 내는 법은 취업지원처에 맡겨 두었단다.';
     $('jobsTitle').textContent=name+'(으)로 만들 수 있는 것';
     $('dJobs').textContent=dept.j;$('dCerts').textContent=dept.c;
     var soft=document.createElement('span');soft.className='soft';soft.textContent=(PUBLIC.indexOf(dept.n)>=0?'해커스 공무원 강의':'에듀윌 자격증 강의')+'는 취업지원처 제휴로 무료로 들을 수 있어요';$('dCerts').appendChild(soft);
